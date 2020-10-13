@@ -1,9 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -13,16 +17,42 @@ html {
 
 .header {
   color: white;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  min-height: 100vh;
   padding: 1rem;
-  width: 80%;
+  width: 100%;
   border-radius: 1rem;
 }
 .header h1 {
-  font-size: 3rem;
+  font-size: 2.9rem;
+  font-weight: 400;
+}
+.header span {
+  color: #d22d80;
+}
+
+.header-work-link {
+  margin-top: 2rem;
+  font-size: 2.3rem;
+  padding: 0.5rem;
+  border: 0.3rem solid white;
+  cursor: pointer;
+  width: 60%;
+}
+
+.nav {
+  background-color: #333e5e;
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+}
+.nav .fas {
+  font-size: 2rem;
 }
