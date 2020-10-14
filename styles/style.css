@@ -2,11 +2,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 body {
-  max-width: 100%;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -46,13 +46,29 @@ html {
 }
 
 .nav {
-  background-color: #333e5e;
+  background-color: #1b242f;
   color: white;
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   justify-content: flex-end;
-  width: 100vw;
+  border-bottom: 0.2rem solid #04c2c9;
 }
 .nav .fas {
   font-size: 2rem;
+}
+
+.portfolio {
+  padding-top: 1.5rem;
+}
+
+.portfolio h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #1b242f;
+}
+
+.portfolio-img-container img {
+  height: 150px;
+  width: 150px;
 }
