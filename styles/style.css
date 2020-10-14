@@ -63,7 +63,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .portfolio h2 {
@@ -76,12 +75,13 @@ html {
   display: grid;
   margin-top: 3rem;
   grid-template-columns: repeat(1, 100%);
-  grid-gap: 10%;
+  grid-gap: 5%;
   width: 60%;
+  text-align: center;
 }
 .portfolio-img-container img {
   height: 150px;
-  width: 260px;
+  width: 100%;
 }
 .portfolio-img-container h3 {
   font-size: 2rem;
