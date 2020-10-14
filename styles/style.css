@@ -46,7 +46,7 @@ html {
 }
 
 .nav {
-  background-color: #1b242f;
+  background-color: #000;
   color: white;
   padding: 1rem;
   display: flex;
@@ -80,7 +80,6 @@ html {
   grid-template-columns: repeat(1, 100%);
   grid-gap: 5%;
   width: 60%;
-  text-align: center;
 }
 .portfolio-img-container img {
   height: 150px;
@@ -90,4 +89,20 @@ html {
   font-size: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.icons-container img {
+  width: 4rem;
+  height: 4.3rem;
+  margin-left: -0.5rem;
+  margin-right: 2rem;
 }
