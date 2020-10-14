@@ -52,6 +52,9 @@ html {
   display: flex;
   justify-content: flex-end;
   border-bottom: 0.2rem solid #04c2c9;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .nav .fas {
   font-size: 2rem;
