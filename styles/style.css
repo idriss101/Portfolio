@@ -6,7 +6,7 @@
 }
 
 body {
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   width: 100vw;
 }
@@ -56,15 +56,16 @@ section h2 {
 }
 
 .nav {
-  background-color: #000;
+  background-color: #252934;
   color: white;
   padding: 1rem;
   display: flex;
   justify-content: flex-end;
   border-bottom: 0.2rem solid #04c2c9;
   /* position: fixed;
-  top: 0; */
-  width: 100vw;
+  top: 0;
+  left: 0;
+  width: 90px; */
 }
 .nav .fas {
   font-size: 2rem;
@@ -160,7 +161,7 @@ section h2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 .about h2 {
   text-transform: uppercase;
@@ -187,4 +188,25 @@ section h2 {
   width: 250px;
   border-radius: 1rem;
   margin-bottom: 3rem;
+}
+
+.skills {
+  background-color: #252934;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.skills-content {
+  width: 90%;
+  text-align: center;
+}
+.skills-arrow {
+  background-color: beige;
+  clip-path: polygon(100% 51%, 0 50%, 47% 100%);
+  height: 10%;
 }
