@@ -9,10 +9,31 @@
     grid-template-columns: repeat(2, 50%);
     grid-column-gap: 3%;
   }
+}
 
-  /* .about-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  } */
+@media screen and (min-width: 992px) {
+  .header h1 {
+    font-size: 4.8rem;
+  }
+  .header-work-link {
+    width: 20%;
+    font-size: 3rem;
+  }
+
+  .portfolio-img-container {
+    grid-template-columns: repeat(3, 30%);
+    width: 80%;
+  }
+
+  .portfolio {
+    justify-content: center;
+  }
+
+  .about-content {
+    width: 40%;
+    padding-top: 3rem;
+  }
+  .about-content-text {
+    /* width: 40%; */
+  }
 }
