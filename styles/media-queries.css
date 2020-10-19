@@ -40,23 +40,30 @@
   }
 
   .about-content {
-    width: 40%;
+    width: 100%;
     padding-top: 3rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .about-content-text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    width: 30%;
+    margin-left: 10rem;
   }
   .about-content-text h4 {
     font-size: 4rem;
     text-transform: capitalize;
+    text-align: left;
   }
   .about-content-text button {
     width: 40%;
+  }
+  .about-content-text p {
+    text-align: left;
   }
   .about-content img {
     height: 400px;

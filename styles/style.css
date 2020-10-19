@@ -63,7 +63,7 @@ section h2 {
   width: 60%;
 }
 
-.nav {
+/* .nav {
   background-color: #252934;
   color: white;
   padding: 1rem;
@@ -74,6 +74,26 @@ section h2 {
 }
 .nav .fas {
   font-size: 2rem;
+} */
+
+#bootstrap-overrides .navbar {
+  background-color: #252934;
+  padding: 1rem;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+}
+
+#bootstrap-overrides .navbar span {
+  color: white !important;
+}
+
+#bootstrap-overrides .navbar a {
+  color: white;
+  font-size: 1.6rem;
+  margin-right: 1.5rem;
 }
 
 .portfolio {

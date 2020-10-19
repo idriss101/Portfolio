@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    
     <title>Idriss Kone</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/animations.css" />
@@ -20,7 +22,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body id="bootstrap-overrides">
     <header>
       <div class="stars">
         <div class="container">
@@ -336,7 +338,7 @@
         <i class="fas fa-bars"></i>
       </div>
     </nav> -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <button
         class="navbar-toggler"
         type="button"
@@ -348,7 +350,6 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Navbar</a>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -358,26 +359,46 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
         </form>
       </div>
     </nav>
     <main>
+      <section class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="">
+            <img src="./img/profile.jpeg" alt="" />
+          </div>
+          <div class="about-content-text">
+            <h4>Hi! My name's Idriss and I am a self taught web developer</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+              quaerat error nobis architecto maiores, nulla minus aliquam, eius
+              ullam inventore facere, odio porro repellendus sint! Deserunt
+              alias perferendis amet pariatur! <br />
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+              quaerat error nobis architecto maiores, nulla minus aliquam, eius
+              ullam inventore facere, odio porro repellendus sint! Deserunt
+              alias perferendis amet pariatur!
+            </p>
+            <button type="button" class="btn btn-outline-secondary">
+              Let's Connect!
+            </button>
+          </div>
+        </div>
+      </section>
       <section class="portfolio">
         <div class=""><h2>Portfolio</h2></div>
         <div class="portfolio-img-container">
@@ -557,29 +578,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-          <div class="">
-            <img src="./img/profile.jpeg" alt="" />
-          </div>
-          <div class="about-content-text">
-            <h4>Hi! My name's Idriss and I am a self taught web developer</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
-              quaerat error nobis architecto maiores, nulla minus aliquam, eius
-              ullam inventore facere, odio porro repellendus sint! Deserunt
-              alias perferendis amet pariatur! Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Non quaerat error nobis architecto
-              maiores, nulla minus aliquam, eius ullam inventore facere, odio
-              porro repellendus sint! Deserunt alias perferendis amet pariatur!
-            </p>
-            <button type="button" class="btn btn-outline-secondary">
-              Let's Connect!
-            </button>
-          </div>
-        </div>
-      </section>
+
       <section class="skills">
         <h2>Skills</h2>
         <div class="skills-content">
