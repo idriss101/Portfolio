@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,8 +22,7 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <script src='app.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
   </head>
   <body id="bootstrap-overrides">
     <header>
@@ -328,11 +328,11 @@
           <div class="star"></div>
         </div>
       </div>
-      <section class="header">
+      <section class="header" id='home'>
         <h1>
-          Hello, I'm <span>Idriss Kone.</span> <br />I'm a front-end developer
-        </h1>
-        <div class="header-work-link">View my work <i class="fas fa-arrow-right"></i></div>
+          Hello, I'm <span id='name'>Idriss Kone.</span> <br />I'm a front-end developer
+        <span id='typing'>&nbsp;</span></h1>
+        <div class="header-work-link"><a href='#portfolio'>View my work <i class="fas fa-arrow-right"></i></a></div>
       </section>
     </header>
     <!-- <nav>
@@ -361,35 +361,36 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
         </form>
       </div>
     </nav>
     <main>
-      <section class="about">
+      <section class="about" id='about'>
         <h2>About Me</h2>
         <div class="about-content">
           <div class="">
             <img src="./img/profile.jpeg" alt="" />
           </div>
           <div class="about-content-text">
-            <h4>Hi! My name's Idriss and I am a self taught web developer</h4>
+            <h4>Hi! My name's <span>Idriss</span>  and I am a self taught web developer</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
               quaerat error nobis architecto maiores, nulla minus aliquam, eius
               ullam inventore facere, odio porro repellendus sint! Deserunt
               alias perferendis amet pariatur! <br />
+              <br>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
               quaerat error nobis architecto maiores, nulla minus aliquam, eius
               ullam inventore facere, odio porro repellendus sint! Deserunt
@@ -401,13 +402,13 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id='portfolio'>
         <div class=""><h2>Portfolio</h2></div>
         <div class="portfolio-img-container">
           <div class="portfolio-project">
             <img src="/img/img-1.jpg" alt="" />
             <div class="project-content">
-              <h3>Project Title</h3>
+              <h3>Movie-Search</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
                 earum quo nostrum aliquid, praesentium esse necessitatibus,
@@ -581,7 +582,7 @@
         </div>
       </section>
 
-      <section class="skills">
+      <section class="skills" id='skills'>
         <h2>Skills</h2>
         <div class="skills-content">
           <p>
@@ -601,10 +602,10 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id='contact'>
         <h2>Contact Me</h2>
         <p>Have a question or want to work together?</p>
-        <form>
+        <form method='POST' action='form.php' id='contact-form'>
           <div class="form-group">
             <label for="exampleFormControlInput1">Name:</label>
             <input
@@ -612,6 +613,7 @@
               class="form-control"
               id="exampleFormControlInput1"
               placeholder="Name"
+              name='name'
             />
           </div>
           <div class="form-group">
@@ -621,6 +623,7 @@
               class="form-control"
               id="exampleFormControlInput1"
               placeholder="Enter email"
+              name='email'
             />
           </div>
           <div class="form-group">
@@ -629,10 +632,11 @@
               class="form-control"
               id="exampleFormControlTextarea1"
               rows="3"
+              name='message'
             ></textarea>
           </div>
           <div class="">
-            <button type="submit" class="btn btn-secondary">Submit</button>
+            <button type="submit" class="btn btn-secondary" value='Send'>Submit</button>
           </div>
         </form>
       </section>
@@ -640,7 +644,7 @@
     <footer>
       <div class="footer">
         <div class="go-up">
-          <i class="fas fa-angle-double-up"></i>
+          <a href="#home"><i class="fas fa-angle-double-up"></i></a>
         </div>
         <div class="footer-content">
           <div class="footer-social"><i class="fab fa-linkedin-in"></i></div>
@@ -649,7 +653,11 @@
         </div>
       </div>
     </footer>
-
+    
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -660,5 +668,7 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script src="./scripts/validation.js"></script>
+    <script src='./scripts/app.js'></script>
   </body>
 </html>

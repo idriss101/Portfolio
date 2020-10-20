@@ -14,6 +14,7 @@ body {
 html {
   font-size: 10px;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 footer {
@@ -53,6 +54,13 @@ section h2 {
 .header span {
   color: #d22d80;
 }
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.header a:visited {
+  color: white;
+}
 
 .header-work-link {
   margin-top: 2rem;
@@ -75,12 +83,16 @@ section h2 {
 .header-work-link:hover i {
   transform: rotate(90deg);
 }
+.header-work-link:hover a {
+  text-decoration: none;
+}
 
 #bootstrap-overrides .navbar {
   background-color: #252934;
   padding: 1rem;
   z-index: 30;
   border-bottom: 0.5rem solid #05c2c9;
+  transition: top 1s linear;
 }
 
 #bootstrap-overrides .navbar span {
@@ -91,6 +103,10 @@ section h2 {
   color: white;
   font-size: 1.6rem;
   margin-right: 1.5rem;
+  transition: all 0.3s;
+}
+#bootstrap-overrides .navbar a:hover {
+  color: #d22d80;
 }
 
 .portfolio {
@@ -99,6 +115,7 @@ section h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #f5f5f5;
 }
 
 .portfolio-project {
@@ -188,7 +205,7 @@ section h2 {
 }
 
 .about {
-  background-color: #f5f5f5;
+  background-color: ;
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -203,6 +220,9 @@ section h2 {
 .about h4 {
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+.about h4 span {
+  color: #d22d80;
 }
 
 .about-content {
@@ -301,11 +321,16 @@ section h2 {
 
 .footer-social {
   text-align: center;
-  background-color: grey;
+  background-color: #5a6268;
   width: 5rem;
+  transition: all 0.3s;
 }
 .footer-social i {
   padding: 1rem;
+}
+
+.footer-social:hover {
+  background-color: #d22d80;
 }
 
 .go-up {
@@ -317,4 +342,13 @@ section h2 {
 .go-up i {
   font-size: 3.5rem;
   padding: 1rem;
+}
+.go-up a {
+  color: white;
+}
+.go-up a:visited {
+  color: white;
+}
+.go-up a:hover {
+  color: white;
 }
