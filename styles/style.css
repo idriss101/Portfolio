@@ -120,6 +120,9 @@ section h2 {
 
 .portfolio-project {
   margin-bottom: 3rem;
+  /* max-height: 100%;
+  min-height: 100%;
+  height: 100%; */
 }
 
 .portfolio h2 {
@@ -150,23 +153,25 @@ section h2 {
 
 .project-content {
   border: 1px solid lightgrey;
-  padding: 1.5rem;
+  padding: 30px;
   border-radius: 0 0 1rem 1rem;
 }
 
 .icons-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
   font-size: 3rem;
   margin-top: 1rem;
 }
 .icons-container img {
-  width: 3.5rem;
-  height: 3.6rem;
+  width: 5rem;
+  height: 5rem;
   margin-left: -0.5rem;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
+  margin-bottom: 2rem;
 }
 
 .project-link-wrap {
@@ -203,9 +208,19 @@ section h2 {
   border-color: 1rem solid #252934;
   background-color: white;
 }
+.project-link-wrap button a {
+  color: white;
+  text-decoration: none;
+}
+project-link-wrap button a:visited {
+  color: white;
+}
+.project-link-wrap button a:hover {
+  color: #252934;
+}
 
 .about {
-  background-color: ;
+  /* background-color: ; */
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -252,6 +267,18 @@ section h2 {
   color: #252934;
   border-color: 1rem solid #252934;
   background-color: white;
+}
+
+.about-content-text a {
+  color: white;
+  text-decoration: none;
+}
+.about-content-text a:visited {
+  color: white;
+}
+.about-content-text a:hover {
+  color: #252934;
+  text-decoration: none;
 }
 
 .skills {
@@ -331,6 +358,17 @@ section h2 {
 
 .footer-social:hover {
   background-color: #d22d80;
+}
+
+.footer-social a {
+  color: white;
+  text-decoration: none;
+}
+.footer-social a:visited {
+  color: white;
+}
+.footer-social a:hover {
+  color: white;
 }
 
 .go-up {
