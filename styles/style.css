@@ -66,6 +66,9 @@ section h2 {
 .header a:visited {
   color: white;
 }
+.header a:hover {
+  color: white;
+}
 
 .header-work-link {
   margin-top: 2rem;
