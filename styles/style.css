@@ -6,9 +6,11 @@
 }
 
 body {
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   width: 100vw;
+  -webkit-overflow-scrolling: touch;
+  /* white-space: nowrap; */
 }
 
 html {
