@@ -3,6 +3,7 @@ header {
   height: 100vh;
   margin: 0;
   overflow: auto;
+  overflow-x: hidden;
   background-image: radial-gradient(
     center,
     ellipse cover,
@@ -54,6 +55,10 @@ header {
   background-size: 150vmax 150vmax;
   background-repeat: no-repeat;
   background-color: #112;
+}
+.stars {
+  width: 100%;
+  overflow-x: hidden;
 }
 .stars .container {
   position: absolute;
