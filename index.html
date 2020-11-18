@@ -1,11 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
-    
+    <meta name="viewport" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
+
     <title>Idriss Kone</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/animations.css" />
@@ -22,7 +24,6 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-
   </head>
   <body id="bootstrap-overrides">
     <header>
@@ -328,11 +329,16 @@
           <div class="star"></div>
         </div>
       </div>
-      <section class="header" id='home'>
+      <section class="header" id="home">
         <h1>
-          Hello, I'm <span id='name'>Idriss Kone.</span> <br />I'm a web developer
-        <span id='typing'>&nbsp;</span></h1>
-        <div class="header-work-link"><a href='#portfolio'>View my work <i class="fas fa-arrow-right"></i></a></div>
+          Hello, I'm <span id="name">Idriss Kone.</span> <br />I'm a web
+          developer <span id="typing">&nbsp;</span>
+        </h1>
+        <div class="header-work-link">
+          <a href="#portfolio"
+            >View my work <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
       </section>
     </header>
     <!-- <nav>
@@ -361,7 +367,13 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              href="#about"
+              >About</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -373,11 +385,10 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-        </form>
       </div>
     </nav>
     <main>
-      <section class="about" id='about'>
+      <section class="about" id="about">
         <h2>About Me</h2>
         <div class="about-content">
           <div class="">
@@ -386,23 +397,31 @@
           <div class="about-content-text">
             <h4>Brief Rundown:</h4>
             <p>
-              I have always had a passion for coding, I started when I was 12. Ever since, it's been a 
-              goal of mine to make the world a better place and to improve people's lives using
-              my skills as a programmer. I enjoy doing the frontend side of projects but I don't shy 
-              away from a challenge such as backend! I've recently been learning NodeJs with 
-              Express in order to make more fullstack applications. <br />
-              <br>
-              Whenever I'm not at my desk making my back pains worse, I enjoy building PCs, playing video games,
-              streaming on Twitch, filming videos for my youtube channel and working out. I try to keep busy doing other things
-              that aren't related to coding in order to broaden my perspective!
+              I have always had a passion for coding, I started when I was 12.
+              Ever since, it's been a goal of mine to make the world a better
+              place and to improve people's lives using my skills as a
+              programmer. I enjoy doing the frontend side of projects but I
+              don't shy away from a challenge such as backend! I've recently
+              been learning NodeJs with Express in order to make more fullstack
+              applications. <br />
+              <br />
+              Whenever I'm not at my desk making my back pains worse, I enjoy
+              building PCs, playing video games, streaming on Twitch, filming
+              videos for my youtube channel and working out. I try to keep busy
+              doing other things that aren't related to coding in order to
+              broaden my perspective!
             </p>
             <button type="button" class="btn btn-outline-secondary">
-               <a href="https://www.linkedin.com/in/idriss-kone-880b491bb/">Let's Connect!</a> 
+              <a
+                href="https://www.linkedin.com/in/idriss-kone-880b491bb/"
+                target="_blank"
+                >Let's Connect!</a
+              >
             </button>
           </div>
         </div>
       </section>
-      <section class="portfolio" id='portfolio'>
+      <section class="portfolio" id="portfolio">
         <div class=""><h2>Portfolio</h2></div>
         <div class="portfolio-img-container">
           <div class="portfolio-project">
@@ -410,29 +429,35 @@
             <div class="project-content">
               <h3>Pokedex</h3>
               <p>
-                A one stop shop to look up information about your favorite pokemon!
-                I made this website because I would always forget information about certain pokemon
-                and it just took too long to always search it up online. So, I figured making a website
-                where all the information I woukd need would be better.
+                A one stop shop to look up information about your favorite
+                pokemon! I made this website because I would always forget
+                information about certain pokemon and it just took too long to
+                always search it up online. So, I figured making a website where
+                all the information I woukd need would be better.
               </p>
-              <h3>What I learned: </h3>
+              <h3>What I learned:</h3>
               <ul>
                 <li>
                   <p>Getting for familiar with using a React UI library</p>
-                  </li>
-                  <li><p>Being able to implement Infinite Scrolling</p></li>
-                  <li><p>Using React Hooks for the first time</p></li>
+                </li>
+                <li><p>Being able to implement Infinite Scrolling</p></li>
+                <li><p>Using React Hooks for the first time</p></li>
               </ul>
               <div class="project-link-wrap">
                 <button
                   type="button"
                   class="btn btn-outline-secondary project-link"
                 >
-                <a href="https://pokemon-pokedex-4ah7.netlify.app/">Live Demo</a>
-                  
+                  <a
+                    href="https://pokemon-pokedex-4ah7.netlify.app/"
+                    target="_blank"
+                    >Live Demo</a
+                  >
                 </button>
                 <button type="button" class="btn btn-outline-secondary">
-                  <a href="https://github.com/idriss101/Pokedex">View Github</a>  
+                  <a href="https://github.com/idriss101/Pokedex" target="_blank"
+                    >View Github</a
+                  >
                 </button>
               </div>
             </div>
@@ -442,27 +467,42 @@
             <div class="project-content">
               <h3>Movie Search</h3>
               <p>
-                A website to look up any movie you want and get a short plot description
-                along with a trailer of the movie. This is my first project using react and
-                consuming an api. I am a big fan of movies so making this as my first project using react was a no brainer
+                A website to look up any movie you want and get a short plot
+                description along with a trailer of the movie. This is my first
+                project using react and consuming an api. I am a big fan of
+                movies so making this as my first project using react was a no
+                brainer
               </p>
               <h3>What I Learned:</h3>
               <ul>
                 <li><p>Getting more familiar with using ReactJs</p></li>
-                <li><p>Consuming an API using axios </p></li>
-                <li><p>Using the React Youtube library in order to display movie trailers</p></li>
-        
+                <li><p>Consuming an API using axios</p></li>
+                <li>
+                  <p>
+                    Using the React Youtube library in order to display movie
+                    trailers
+                  </p>
+                </li>
               </ul>
-             
+
               <div class="project-link-wrap">
                 <button
                   type="button"
                   class="btn btn-outline-secondary project-link"
                 >
-                 <a href="https://movie-search-464185.netlify.app/"> Live Demo</a>
+                  <a
+                    href="https://movie-search-464185.netlify.app/"
+                    target="_blank"
+                  >
+                    Live Demo</a
+                  >
                 </button>
                 <button type="button" class="btn btn-outline-secondary">
-                <a href="https://github.com/idriss101/MovieSearch">View Github</a>  
+                  <a
+                    href="https://github.com/idriss101/MovieSearch"
+                    target="_blank"
+                    >View Github</a
+                  >
                 </button>
               </div>
             </div>
@@ -472,39 +512,49 @@
             <div class="project-content">
               <h3>WeatherApp</h3>
               <p>
-                Fast and easy to use weather website to look up the weather in your favorite cities!
-                This is a smaller project that I wanted to work on in order to get more comfortable
-                with fetching API data with vanilla js and also implement autocomplete with search
+                Fast and easy to use weather website to look up the weather in
+                your favorite cities! This is a smaller project that I wanted to
+                work on in order to get more comfortable with fetching API data
+                with vanilla js and also implement autocomplete with search
               </p>
               <h3>What I Learned:</h3>
               <ul>
                 <li><p>Implementing autocomplete using a library</p></li>
                 <li><p>Fetching API data with vanilla JS</p></li>
-                <li><p>Reading through documentation in order to use it in my project</p></li>
+                <li>
+                  <p>
+                    Reading through documentation in order to use it in my
+                    project
+                  </p>
+                </li>
               </ul>
-              
+
               <div class="project-link-wrap">
                 <button
                   type="button"
                   class="btn btn-outline-secondary project-link"
                 >
-                <a href="https://weather-search-8ebba8.netlify.app/">Live Demo</a>
-                  
+                  <a
+                    href="https://weather-search-8ebba8.netlify.app/"
+                    target="_blank"
+                    >Live Demo</a
+                  >
                 </button>
                 <button type="button" class="btn btn-outline-secondary">
-                  <a href="https://github.com/idriss101/WeatherApp">View Github</a>  
+                  <a
+                    href="https://github.com/idriss101/WeatherApp"
+                    target="_blank"
+                    >View Github</a
+                  >
                 </button>
               </div>
             </div>
           </div>
-          
-         
-          </div>
         </div>
       </section>
 
-      <section class="skills" id='skills'>
-        <h2 style='margin-bottom: 3rem'>Tools I Use</h2>
+      <section class="skills" id="skills">
+        <h2 style="margin-bottom: 3rem">Tools I Use</h2>
         <div class="skills-content">
           <div class="icons-container">
             <img src="./img/html-icon.png" alt="" />
@@ -518,10 +568,14 @@
           </div>
         </div>
       </section>
-      <section class="contact" id='contact'>
+      <section class="contact" id="contact">
         <h2>Contact Me</h2>
         <p>Have a question or want to work together?</p>
-        <form method='POST' action='https://formspree.io/f/xknpzqrb' id='contact-form'>
+        <form
+          method="POST"
+          action="https://formspree.io/f/xknpzqrb"
+          id="contact-form"
+        >
           <div class="form-group">
             <label for="exampleFormControlInput1">Name:</label>
             <input
@@ -529,7 +583,7 @@
               class="form-control"
               id="exampleFormControlInput1"
               placeholder="Name"
-              name='name'
+              name="name"
             />
           </div>
           <div class="form-group">
@@ -539,7 +593,7 @@
               class="form-control"
               id="exampleFormControlInput1"
               placeholder="Enter email"
-              name='_replyto'
+              name="_replyto"
             />
           </div>
           <div class="form-group">
@@ -548,12 +602,14 @@
               class="form-control"
               id="exampleFormControlTextarea1"
               rows="3"
-              name='message'
-              style='font-size: 1.5rem;'
+              name="message"
+              style="font-size: 1.5rem"
             ></textarea>
           </div>
           <div class="">
-            <button type="submit" class="btn btn-secondary" value='Send'>Submit</button>
+            <button type="submit" class="btn btn-secondary" value="Send">
+              Submit
+            </button>
           </div>
         </form>
       </section>
@@ -564,14 +620,23 @@
           <a href="#home"><i class="fas fa-angle-double-up"></i></a>
         </div>
         <div class="footer-content">
-          <div class="footer-social"><a href="https://www.linkedin.com/in/idriss-kone-880b491bb/"><i class="fab fa-linkedin-in"></i></a></div>
-          <div class="footer-social"><a href="https://github.com/idriss101"><i class="fab fa-github"></i></a></div>
+          <div class="footer-social">
+            <a
+              href="https://www.linkedin.com/in/idriss-kone-880b491bb/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div class="footer-social">
+            <a href="https://github.com/idriss101" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
           <div class="footer-social"><i class="fab fa-facebook-f"></i></div>
         </div>
       </div>
     </footer>
-    
-    
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -585,7 +650,12 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
     <script src="./scripts/validation.js"></script>
-    <script src='./scripts/app.js'></script>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>
