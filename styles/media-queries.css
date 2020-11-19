@@ -60,6 +60,9 @@
     /* align-items: center; */
     justify-content: center;
   }
+  .footer-content {
+    width: 20%;
+  }
 }
 
 @media screen and (min-width: 1900px) {
@@ -153,6 +156,6 @@
   }
 
   .footer-content {
-    width: 40%;
+    width: 20%;
   }
 }
