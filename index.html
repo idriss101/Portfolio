@@ -400,11 +400,13 @@
             data-toggle="collapse"
             data-target=".navbar-collapse"
           >
-            <a class="nav-link" href="/IdrissKoneResume.pdf"  target='_blank'>Resume</a>
+            <a class="nav-link" href="/IdrissKoneResume.pdf" target="_blank"
+              >Resume</a
+            >
           </li>
         </ul>
-        
-        </ul>
+
+        <!-- </ul> -->
       </div>
     </nav>
     <main>
@@ -431,27 +433,59 @@
               doing other things that aren't related to coding in order to
               broaden my perspective!
             </p>
-            <div class="btn-wrap"><button type="button" class="btn btn-outline-secondary">
-              <a
-                href="https://www.linkedin.com/in/idriss-kone-880b491bb/"
-                target="_blank"
-                >Let's Connect!</a
-              >
-            </button>
-            <button type="button" class="btn btn-outline-secondary">
-              <a
-                href="/IdrissKoneResume.pdf"
-                target="_blank"
-                >View Resume</a
-              >
-            </button></div>
-            
+            <div class="btn-wrap">
+              <button type="button" class="btn btn-outline-secondary">
+                <a
+                  href="https://www.linkedin.com/in/idriss-kone-880b491bb/"
+                  target="_blank"
+                  >Let's Connect!</a
+                >
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                <a href="/IdrissKoneResume.pdf" target="_blank">View Resume</a>
+              </button>
+            </div>
           </div>
         </div>
       </section>
       <section class="portfolio" id="portfolio">
         <div class=""><h2>Portfolio</h2></div>
         <div class="portfolio-img-container">
+          <div class="portfolio-project">
+            <img src="/img/screenshot-designo.png" alt="" />
+            <div class="project-content">
+              <h3>Designo</h3>
+              <p>
+                A multipage website built using Reactjs and Saas. This was a
+                great project to sharpen my CSS skills without using any
+                frameworks. It also made me a lot more comfortable using svgs in
+                my projects. This project hasa also allowed me to show my skills
+                with CSS grid and Flexbox .
+              </p>
+              <h3>What I Learned:</h3>
+              <ul>
+                <li><p>Building a multipage React website from scratch</p></li>
+                <li><p>Getting more familiar with the use of SVGs</p></li>
+                <li><p>Sharpening my CSS skills</p></li>
+              </ul>
+
+              <div class="project-link-wrap">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary project-link"
+                >
+                  <a href="https://designo-d9d71e.netlify.app/" target="_blank"
+                    >Live Demo</a
+                  >
+                </button>
+                <button type="button" class="btn btn-outline-secondary">
+                  <a href="https://github.com/idriss101/Designo" target="_blank"
+                    >View Github</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
           <div class="portfolio-project">
             <img src="/img/screenshot-pokedex.png" alt="" />
             <div class="project-content">
@@ -497,9 +531,9 @@
               <p>
                 A website to look up any movie you want and get a short plot
                 description along with a trailer of the movie. This is my first
-                project using React and consuming an API. I am a big fan of
-                movies so making this as my first project using React was a no
-                brainer
+                project using React and consuming an API. <br />
+                I am a big fan of movies so making this as my first project
+                using React was a no brainer
               </p>
               <h3>What I Learned:</h3>
               <ul>
@@ -586,7 +620,7 @@
         <div class="skills-content">
           <div class="icons-container">
             <img src="./img/html-icon.png" alt="" />
-           <img src="./img/css-icon.png" alt="" />
+            <img src="./img/css-icon.png" alt="" />
             <img src="./img/js-icon.png" alt="" />
             <img src="./img/react-icon.png" alt="" />
             <img src="./img/git.png" alt="" />
