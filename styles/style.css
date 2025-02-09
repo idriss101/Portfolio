@@ -436,3 +436,16 @@ project-link-wrap button a:visited {
 .go-up a:hover {
   color: white;
 }
+
+.header-description {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+  border-radius: 4px;
+  color: #0c5460;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
